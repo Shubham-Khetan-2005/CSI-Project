@@ -1,20 +1,40 @@
+import Navbar from './components/Navbar.tsx';
+import React from 'react';
+import { useState } from 'react';
+import './index.css';
+import GrievancePage from './components/GrievancePage.tsx';
+import Footer from './components/Footer.jsx';
+
 function App() {
+  const [activeSection, setActiveSection] = useState('home');
+
+  // const renderActiveSection = () => {
+  //   switch (activeSection) {
+  //     case 'home':
+  //       return <HomePage onSectionChange={setActiveSection} />;
+  //     case 'about':
+  //       return <AboutPage />;
+  //     case 'awareness':
+  //       return <AwarenessPage />;
+  //     case 'engagement':
+  //       return <EngagementPage />;
+  //     case 'grievances':
+  //       return <GrievancePage />;
+  //     default:
+  //       return <HomePage onSectionChange={setActiveSection} />;
+  //   }
+  // };
   return (
+    <>
+    <Navbar/>
+  
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <GrievancePage/>
       </header>
+      <Footer/>
     </div>
+    </>
   );
 }
 
