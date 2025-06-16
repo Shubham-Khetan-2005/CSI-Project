@@ -36,6 +36,14 @@ export default function Navbar() {
         >
           Know Your Rights
         </NavLink>
+        <NavLink
+          to="/grievance"
+          className={({ isActive }) =>
+            isActive ? 'text-blue-400 border-b-2 border-blue-400 pb-1' : 'hover:text-gray-300'
+          }
+        >
+          Grievance Form
+        </NavLink>
       </div>
     </nav>
   );

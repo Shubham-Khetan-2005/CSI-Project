@@ -10,6 +10,8 @@ import About from "./features/portal/pages/About";
 import KnowYourRights from "./features/portal/pages/KnowYourRights";
 import EnvironmentalImpact from "./features/portal/pages/EnvironmentalImpact";
 import LatestUpdates from "./features/portal/pages/LatestUpdates";
+import Footer from "./common/Components/Footer";
+import GrievancePage from "./grievances/GrievancePage.tsx";
 // import LifeAroundMine from "./features/portal/pages/LifeAroundMine";
 
 // Grievance Page
@@ -28,8 +30,9 @@ function App() {
           <Route path="/environmental-impact" element={<EnvironmentalImpact />} />
           <Route path="/latest-updates" element={<LatestUpdates />} /> 
           {/* <Route path="/life-around-mine" element={<LifeAroundMine />} /> */}
-          {/* <Route path="/grievance" element={<GrievancePage />} />  */}
+          <Route path="/grievance" element={<GrievancePage/>} /> 
         </Routes>
+        <Footer/>
       {/* </MainLayout> */}
     </Router>
   );
