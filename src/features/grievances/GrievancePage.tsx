@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,} from 'react';
 import { Send, FileText, Clock, CheckCircle, User, Phone, MessageSquare, Target, AlertCircle, Heart, ChevronUp, ChevronDown } from 'lucide-react';
-
 
 // Initialize Firebase
 import {getFirestore, collection, addDoc, getDocs} from 'firebase/firestore';
