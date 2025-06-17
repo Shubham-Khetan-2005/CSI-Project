@@ -2,5 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Start adding CSS below this  */
+html, body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #000000;
+  color: white;
+}
 
+* {
+  box-sizing: border-box;
+}
