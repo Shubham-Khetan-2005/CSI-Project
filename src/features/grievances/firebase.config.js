@@ -14,7 +14,7 @@ export const firebaseConfig = {
   appId: process.env.REACT_APP_appId
 };
 // console.log(process.env.apiKey);
-console.log(process.env.REACT_APP_authDomain);
+// console.log(process.env.REACT_APP_authDomain);
 
 // Initialize Firebase
 // export const firebaseConfig;

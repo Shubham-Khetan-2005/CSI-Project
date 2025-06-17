@@ -4,7 +4,7 @@ import { Send, FileText, Clock, CheckCircle, User, Phone, MessageSquare, Target,
 
 // Initialize Firebase
 import {getFirestore, collection, addDoc, getDocs} from 'firebase/firestore';
-import {firebaseConfig} from "../firebase.config.js";
+import {firebaseConfig} from "./firebase.config.js";
 import { initializeApp } from "firebase/app";
 export const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
@@ -74,8 +74,6 @@ const GrievancePage: React.FC = () => {
   
   const loadData = async () => {
     const querySnapshot = await getDocs(collection(firestore, "grievance"));
-    // console.log('querySnapshot);
-    // console.log("testing")
     const entry = recentGrievances;
     querySnapshot.forEach((doc) => {
       // doc.data() is never undefined for query doc snapshots
@@ -92,7 +90,6 @@ const GrievancePage: React.FC = () => {
         setDataRecord(entry);
         console.log(dataRecord);
       });
-      // setDataRecord();
     }
   }, [activeTab]);
 
