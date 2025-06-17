@@ -78,7 +78,7 @@ import KnowYourRights from "./features/portal/pages/KnowYourRights";
 import EnvironmentalImpact from "./features/portal/pages/EnvironmentalImpact";
 import LatestUpdates from "./features/portal/pages/LatestUpdates";
 import Footer from "./common/Components/Footer";
-import GrievancePage from "./grievances/GrievancePage.tsx";
+import GrievancePage from "./features/grievances/GrievancePage.tsx";
 // import LifeAroundMine from "./features/portal/pages/LifeAroundMine";
 
 // Grievance Page
