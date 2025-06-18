@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import '../.././index.css';
 
 export default function LifeAroundMine() {
-  const [language, setLanguage] = useState('hi');
+  const [language, setLanguage] = useState('en');
   const content = language === 'hi' ? story_hi : story_en;
 
   return (
