@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import { story_en, story_hi } from './storyData';
 import { motion } from 'framer-motion';
 import '../.././index.css';
 import BackButton from '../../common/Components/BackButton';
 
 export default function LifeAroundMine() {
-  const [language, setLanguage] = useState('hi');
+  const [language, setLanguage] = useState('en');
+
+useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const content = language === 'hi' ? story_hi : story_en;
 
   return (
