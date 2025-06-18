@@ -46,10 +46,10 @@ const InfoCard = () => {
       {cards.map((card, index) => (
         <div
           key={index}
-          className="bg-[#1e293b] rounded-xl p-6 shadow-md hover:shadow-lg transition"
+          className="bg-[#111529] rounded-xl p-6 shadow-md hover:shadow-lg transition"
         >
           <div className="text-3xl mb-4">{card.icon}</div>
-          <h3 className=" text-green-700 text-xl font-semibold mb-2">{card.title}</h3>
+          <h3 className=" text-white-700 text-xl font-semibold mb-2">{card.title}</h3>
           <p className="text-sm text-gray-300 mb-4">{card.description}</p>
           <Link to={card.link} className="text-sky-400 font-medium hover:underline">
             Explore →

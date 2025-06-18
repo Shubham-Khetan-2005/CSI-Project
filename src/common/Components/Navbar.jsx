@@ -3,7 +3,7 @@ import { FaMountain } from 'react-icons/fa'; // optional icon
 
 export default function Navbar() {
   return (
-    <nav className="bg-black text-white px-6 py-3 flex items-center justify-between shadow-md">
+    <nav className="bg-black text-white px-6 py-4 flex items-center justify-between shadow-md">
       <div className="flex items-center gap-2 text-xl font-bold">
         <FaMountain className="text-blue-400" />
         <span>UCIL Portal</span>

@@ -5,6 +5,7 @@ import { Send, FileText, Clock, CheckCircle, User, Phone, MessageSquare, Target,
 import {getFirestore, collection, addDoc, getDocs} from 'firebase/firestore';
 import {firebaseConfig} from "./firebase.config.js";
 import { initializeApp } from "firebase/app";
+import BackButton from '../../common/Components/BackButton.jsx';
 export const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
 
@@ -127,20 +128,12 @@ const GrievancePage: React.FC = () => {
     { id: 'track', label: 'Track Status', icon: FileText },
   ];
 
-  const getStatusColor = (color: string) => {
-    const colors = {
-      yellow: 'bg-[#DC965A]/20 text-[#DC965A] border-[#DC965A]/30',
-      green: 'bg-[#01baef]/20 text-[#01baef] border-[#01baef]/30',
-      blue: 'bg-[#01baef]/20 text-[#01baef] border-[#01baef]/30',
-      red: 'bg-[#841C26]/20 text-[#841C26] border-[#841C26]/30',
-    };
-    return colors[color as keyof typeof colors] || colors.blue;
-  };
-
+  // return (<BackButton/>)
   return (
     <div className="min-h-screen bg-black py-12 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
+        <BackButton/>
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-[#f8f8ff] mb-6">
             <div>Grievance Support Center</div>

@@ -3,11 +3,11 @@ import InfoCard from "../components/InfoCard";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-[#0b1120] text-white">
+    <div className="min-h-screen bg-[#000] text-white">
        {/* 👋 Welcome Section */}
-      <section className="text-center py-6 px-4 bg-[#1e293b] shadow">
-        <h2 className="text-2xl font-semibold text-sky-400">Welcome to UCIL Awareness Portal</h2>
-        <p className="text-gray-300 text-sm mt-1">
+      <section className="text-center py-10 px-4 bg-[#111529] shadow">
+        <h2 className="text-4xl font-semibold text-white-400">Welcome to UCIL Awareness Portal</h2>
+        <p className="text-sky-500 text-sm mt-1">
           Empowering communities with facts and voices
         </p>
         </section>
@@ -16,10 +16,10 @@ const Home = () => {
       {/* Hero */}
 
       <section className="text-center py-12 px-4">
-        <h1 className="text-4xl font-bold mb-4 text-sky-400">
+        <h1 className="text-4xl font-bold mb-4 text-white-400">
           Voices from the Ground, Data from the Sky
         </h1>
-        <p className="max-w-2xl mx-auto text-gray-300">
+        <p className="max-w-2xl mx-auto text-sky-500">
           Understand uranium mining's impact. Know your rights. Take action.
         </p>
         {/* <a href="#explore" className="mt-6 inline-block bg-sky-600 hover:bg-sky-700 text-white font-medium py-2 px-4 rounded transition">
@@ -37,9 +37,9 @@ const Home = () => {
 
       {/* Quick Stats */}
       
-      <section className="bg-[#1E293B] py-8 px-4 text-center">
-        <h2 className="text-2xl font-bold mb-4 text-sky-300">Did You Know?</h2>
-        <div className="flex flex-col md:flex-row justify-center gap-6 text-lg font-medium">
+      <section className="bg-[#111529] py-8 px-4 text-center">
+        <h2 className="text-2xl font-bold mb-4 text-white-300">Did You Know?</h2>
+        <div className="flex flex-col md:flex-row justify-center text-gray-300 gap-6 text-lg font-medium">
           <p>🏞️ 10,000+ hectares mined</p>
           <p>🧬 3× illness rate near mines</p>
           <p>⚖️ 0 grievance hearings in 5 years</p>

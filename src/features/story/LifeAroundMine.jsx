@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { story_en, story_hi } from './storyData';
 import { motion } from 'framer-motion';
 import '../.././index.css';
+import BackButton from '../../common/Components/BackButton';
 
 export default function LifeAroundMine() {
   const [language, setLanguage] = useState('hi');
@@ -10,7 +11,6 @@ export default function LifeAroundMine() {
   return (
     <>
     <div className="bg-[#000000] text-white min-h-screen font-sans scroll-smooth">
-      
 
       <header className="bg-[#0b0f17] border-b border-[#101726] p-4 flex justify-between items-center sticky top-0 z-50">
         <h1 className="text-xl md:text-2xl font-bold tracking-wide text-[#01BAEF]">
@@ -19,10 +19,14 @@ export default function LifeAroundMine() {
         <button
           onClick={() => setLanguage(language === 'hi' ? 'en' : 'hi')}
           className="bg-[#101726] hover:bg-[#111827] text-[#01BAEF] px-4 py-2 rounded-md transition"
-        >
+          >
           {language === 'hi' ? 'English में देखें' : 'हिंदी में देखें'}
         </button>
       </header>
+      <div className='px-20 py-4 '>
+        {/* Hello a text */}
+        <BackButton/>
+      </div>
 
       <main className="space-y-24 pb-24">
         {content.map((slide, index) => (
@@ -32,7 +36,7 @@ export default function LifeAroundMine() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: false, amount: 0.4 }}
-            className="min-h-screen px-4 md:px-16 flex flex-col justify-center items-center text-center"
+            className="py-16 px-4 md:px-16 flex flex-col justify-center items-center text-center"
           >
             {/* 🧠 Title */}
             <motion.h2

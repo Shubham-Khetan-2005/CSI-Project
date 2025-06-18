@@ -1,8 +1,10 @@
 import React from "react";
+import BackButton from "../../../common/Components/BackButton";
 
 const About = () => {
   return (
     <div className="bg-[#0b1120] text-white px-4 sm:px-6 lg:px-20 py-10 min-h-screen">
+      <BackButton/>
       <h1 className="text-3xl sm:text-4xl font-bold text-sky-400 mb-8 text-center">
         About the Jaduguda UCIL Awareness Portal
       </h1>

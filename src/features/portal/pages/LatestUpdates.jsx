@@ -11,6 +11,7 @@ import {
   Gavel,
   BadgeCheck,
 } from "lucide-react";
+import BackButton from "../../../common/Components/BackButton";
 
 const Section = ({ title, Icon, strokeColor = "stroke-blue-400", children }) => (
   <div className="mb-10 sm:mb-12">
@@ -27,6 +28,7 @@ const Section = ({ title, Icon, strokeColor = "stroke-blue-400", children }) => 
 const LatestUpdates = () => {
   return (
     <div className="bg-[#0b1120] text-white px-4 sm:px-6 lg:px-20 py-10 min-h-screen">
+      <BackButton/>
       <div className="max-w-screen-lg mx-auto">
         <h1 className="text-3xl sm:text-4xl font-bold text-sky-400 mb-6 sm:mb-8 text-center">
           Latest Updates

@@ -1,9 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./common/Components/Navbar"
-
 // import MainLayout from "./common/layouts/MainLayout";
-
 // Portal Pages
 import Home from "./features/portal/pages/Home";
 import About from "./features/portal/pages/About";
