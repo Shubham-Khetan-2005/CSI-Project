@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">UCIL Portal</h3>
+              <h3 className="text-lg font-semibold mb-4" ><a href='https://www.ucil.gov.in/'>UCIL Portal</a></h3>
               <p className="text-gray-400">
                 Committed to responsible mining practices that balance national interests with environmental and social justice.
               </p>
@@ -23,9 +23,9 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4">Resources</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-[#01baef]">Environmental Reports</a></li>
-                <li><a href="#" className="hover:text-[#01baef]">Safety Guidelines</a></li>
-                <li><a href="#" className="hover:text-[#01baef]">Community Benefits</a></li>
+                <li><a href="https://en.m.wikipedia.org/wiki/Uranium_Corporation_of_India" className="hover:text-[#01baef]">About UCIL</a></li>
+                <li><a href="https://en.m.wikipedia.org/wiki/Jadugora" className="hover:text-[#01baef]">About Jadugora</a></li>
+                <li><a href="https://en.m.wikipedia.org/wiki/Jaduguda_uranium_mine" className="hover:text-[#01baef]">Jadugada mines</a></li>
                 <li><a href="#" className="hover:text-[#01baef]">Regulatory Compliance</a></li>
               </ul>
             </div>

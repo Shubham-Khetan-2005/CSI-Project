@@ -33,7 +33,7 @@ const BackButton = () => {
     </svg>
   </div>
   <p className="translate-x-2">
-            back
+            Back
     </p>
 </button>
 </>
