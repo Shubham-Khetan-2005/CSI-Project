@@ -3,7 +3,7 @@ import BackButton from "../../../common/Components/BackButton";
 
 const EnvironmentalImpact = () => {
   return (
-    <div className="min-h-screen bg-[#0b1120] text-white p-6">
+    <div className="min-h-screen bg-[#000000] text-white p-6">
       <BackButton/>
       <h1 className="text-3xl py-4 font-bold text-sky-400 mb-6">Environmental Impact</h1>
 
