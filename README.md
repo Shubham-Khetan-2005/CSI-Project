@@ -63,5 +63,37 @@ This is a bilingual (Hindi & English) scroll-based storytelling React app that n
 
 
 
+## 🔗 Project Repository
+
+[https://github.com/Shubham-Khetan-2005/CSI-Project](https://github.com/Shubham-Khetan-2005/CSI-Project)
+
+---
+
+## 🛠️ Setup Guide (React + Firebase)
+
+
+---
+
+### ✅ Prerequisites
+
+Make sure you have these installed:
+
+- Node.js
+- npm (comes with Node.js)
+- Git
+- VS Code (recommended)
+
+---
+
+### 📦 Installation & Running Locally
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/Shubham-Khetan-2005/CSI-Project.git
+cd CSI-Project
+
+
+
 
 
