@@ -69,10 +69,9 @@ This is a bilingual (Hindi & English) scroll-based storytelling React app that n
 
 ---
 
-## 🛠️ Setup Guide (React + Firebase)
+# 🛠️ Setup Guide (React + Firebase)
 
 
----
 
 ### ✅ Prerequisites
 
@@ -92,8 +91,40 @@ Make sure you have these installed:
 ```bash
 git clone https://github.com/Shubham-Khetan-2005/CSI-Project.git
 cd CSI-Project
+```
 
+2. **Install Dependencies**
 
+```bash
+npm install
+```
 
+3. **How to use Firebase Firestore**
+
+Create a google firebase account &rarr; Create a New Project &rarr; Create a Firestore Database
+
+Create a `.env` file in the root directory and add your Firebase credentials
+
+Create `firebase.config.js` like this:
+
+```javascript
+export const firebaseConfig = {
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId
+};
+```
+4. **Run the App Locally**
+
+```bash
+npm run start
+```
+
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
+
+---
 
 
