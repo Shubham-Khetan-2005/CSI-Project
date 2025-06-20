@@ -26,7 +26,7 @@ const Footer = () => {
                 <li><a href="https://en.m.wikipedia.org/wiki/Uranium_Corporation_of_India" className="hover:text-[#01baef]">About UCIL</a></li>
                 <li><a href="https://en.m.wikipedia.org/wiki/Jadugora" className="hover:text-[#01baef]">About Jadugora</a></li>
                 <li><a href="https://en.m.wikipedia.org/wiki/Jaduguda_uranium_mine" className="hover:text-[#01baef]">Jadugada mines</a></li>
-                <li><a href="#" className="hover:text-[#01baef]">Regulatory Compliance</a></li>
+                <li><a href="https://www.india.gov.in/" className="hover:text-[#01baef]">National Portal of India</a></li>
               </ul>
             </div>
             <div>
