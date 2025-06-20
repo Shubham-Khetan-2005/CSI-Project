@@ -31,7 +31,7 @@ const KnowYourRights = () => {
     <div className="bg-black text-white px-4 sm:px-6 lg:px-20 py-10 min-h-screen">
       <BackButton />
       <div className="max-w-screen-lg mx-auto">
-        <h1 className="text-3xl sm:text-4xl font-bold text-sky-400 mb-6 sm:mb-8 text-center">
+        <h1 className="text-3xl sm:text-4xl font-bold text-white  -400 mb-6 sm:mb-8 text-center">
           Know Your Rights
         </h1>
         <p className="text-sm sm:text-base leading-relaxed text-center mb-10 text-gray-300">

@@ -71,7 +71,6 @@ const GrievancePage: React.FC = () => {
     },
   ];
   const [dataRecord, setDataRecord] = useState(recentGrievances);
-  
   const loadData = async () => {
     const querySnapshot = await getDocs(collection(firestore, "grievance"));
     const entry = recentGrievances;
