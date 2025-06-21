@@ -3,6 +3,7 @@ import { story_en, story_hi } from './storyData';
 import { motion } from 'framer-motion';
 import '../.././index.css';
 import BackButton from '../../common/Components/BackButton';
+import './story.css';
 
 export default function LifeAroundMine() {
   const [language, setLanguage] = useState('en');
@@ -17,8 +18,8 @@ useEffect(() => {
     <>
     <div className="bg-[#000000] text-white min-h-screen font-sans scroll-smooth">
 
-      <header className="bg-[#0b0f17] border-b border-[#101726] p-4 flex justify-between items-center sticky top-0 z-50">
-        <h1 className="text-xl md:text-2xl font-bold tracking-wide text-[#01BAEF]">
+      <header className="bg-[#0b0f17] border-b border-[#101726] p-2 flex justify-between items-center">
+        <h1 className=" cursor typewriter-animation text-xl md:text-2xl font-bold tracking-wide align-center text-gray-500">
           {language === 'hi' ? 'जादूगोड़ा की कहानी' : 'The Story of Jadugora'}
         </h1>
         <button

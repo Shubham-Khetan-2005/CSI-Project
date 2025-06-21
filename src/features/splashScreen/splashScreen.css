@@ -1,0 +1,28 @@
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0b0f17;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+.splash-screen.fade-out {
+  opacity: 0;
+}
+
+.main-content {
+  padding: 2rem;
+}
