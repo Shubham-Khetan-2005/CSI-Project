@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./common/Components/Navbar"
 // import MainLayout from "./common/layouts/MainLayout";
@@ -11,16 +11,22 @@ import LatestUpdates from "./features/portal/pages/LatestUpdates";
 import Footer from "./common/Components/Footer";
 import GrievancePage from "./features/grievances/GrievancePage.tsx";
 import LifeAroundMine from "./features/story/LifeAroundMine.jsx";
-import SplashScreen from "./features/splashScreen/SplashScreen.jsx";
+import SplashScreen from "./features/splashScreen/SplashScreen.tsx";
 
 // Grievance Page
 // import GrievancePage from "./features/grievance/pages/GrievancePage";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
 
+  const handleLoadComplete = () => {
+    setIsLoading(false);
+  };
+  
   return (
+    
     <Router>
-      <SplashScreen/>
+      {isLoading?(<SplashScreen onLoadComplete={handleLoadComplete}/>):<></>}
       <Navbar/>
       {/* <MainLayout> */}
         <Routes>

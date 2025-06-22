@@ -19,7 +19,7 @@ useEffect(() => {
     <div className="bg-[#000000] text-white min-h-screen font-sans scroll-smooth">
 
       <header className="bg-[#0b0f17] border-b border-[#101726] p-2 flex justify-between items-center">
-        <h1 className=" cursor typewriter-animation text-xl md:text-2xl font-bold tracking-wide align-center text-gray-500">
+        <h1 className=" cursor typewriter-animation text-xl md:text-2xl font-bold tracking-wide align-center text-sky-500">
           {language === 'hi' ? 'जादूगोड़ा की कहानी' : 'The Story of Jadugora'}
         </h1>
         <button
