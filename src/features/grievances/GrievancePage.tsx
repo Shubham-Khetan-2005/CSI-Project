@@ -499,7 +499,7 @@ const GrievancePage: React.FC = () => {
         )}
       </div>
       </div>
-      <div className="fixed bottom-6 left-6 z-50 flex items-end space-x-2">
+      <div className="fixed bottom-6 left-6 z-25 flex items-end space-x-2">
         <div className="w-20 h-20">
         <img 
           src="./images/chintu.jpg" // Make sure this path is correct!
@@ -514,7 +514,6 @@ const GrievancePage: React.FC = () => {
           <div className="absolute -left-2 bottom-3 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-r-8 border-r-white"></div>
           {mascotMessage}
         </div>
-
       )}
     </div>
     </div>
